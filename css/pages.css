@@ -1,0 +1,156 @@
+/* SideBar Begin */
+
+#SideBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width:300px;
+    overflow: auto;
+}
+#Content{
+    position: absolute;
+    left: 300px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#Logo{
+    height: 64px;
+    margin: 10px 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    line-height: 64px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+#Logo:hover{
+    background: #3f3d43;
+}
+#Logo:hover a{
+    color: #ffffff;
+}
+#Logo a{
+    display: block;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #3f3d43;
+}
+#Logo a:active{
+    color: #3f3d43;
+}
+
+/* SideBar End */
+
+/* Menu Begin */
+
+.menu , .menu-submenu{
+    background: #ffffff;
+    list-style: none;
+    font-size: 1em;
+    overflow: auto;
+}
+
+.menu-item,.menu-submenu,.menu-submenu-item{
+    user-select: none;
+}
+
+.menu-item,.menu-subitem{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    font-size: 1em;
+    line-height: 40px;
+}
+
+.menu-item > a,.menu-submenu-item >a{
+    color: #777;
+    text-decoration: none;
+    display: block;
+    transition: background 0.15s ease,color 0.15s ease;
+}
+
+.menu-item>a{
+    padding: 0 20px;
+}
+
+.menu-submenu-item > a{
+    padding: 0 40px;
+}
+
+.menu-submenu-title{
+    position: relative;
+    padding:0 20px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.menu-submenu-arrow{
+    color: #8b8b8b;
+    position: absolute;
+    right: 14px;
+    top: 4px;
+    transform:rotate(0deg);
+    transition: transform 0.2s ease-in-out,color 0.15s ease;
+}
+
+.menu-submenu-title:hover .menu-submenu-arrow{
+    color: #333;
+}
+
+.menu-submenu-arrow-down{
+    transform:rotate(180deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-submenu-hidden{
+    display: none;
+}
+
+.menu-submenu-item{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    font-size: 1em;
+    line-height: 40px;
+}
+
+.menu-item:hover > a,.menu-submenu-item:hover > a{
+    color: #555;
+    background: #eeeeee;
+}
+
+.menu-item:visited > a,.menu-submenu-item:visited > a{
+    color: #555;
+}
+
+.menu-selected > a{
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Menu End */
+
+#Frame{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0px;
+}
+
+/* Slider */
+
+#Slider{
+    position: absolute;
+    left: 300px;
+    top:0;
+    bottom: 0;
+    height: 100%;
+    box-shadow: 1px 0 1px 1px #eeeeee6c;
+    border-left: 1px solid #eeeeee;
+}

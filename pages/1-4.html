@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <div class="title">
+            <strong>&lt;h1&gt;~&lt;h6&gt; &lt;p&gt; &lt;br&gt; &lt;pre&gt; &lt;span&gt; &lt;hr&gt;标签</strong>
+            <small>排版</small>
+        </div>
+
+        <h2>&lt;h1&gt;~&lt;h6&gt;标签</h2>
+        <h3>定义和用法</h3>
+
+        <p>&lt;h1&gt; - &lt;h6&gt; 标签可定义标题。&lt;h1&gt; 定义最大的标题。&lt;h6&gt; 定义最小的标题。</p>
+
+        <p>由于 h 元素拥有确切的语义，因此请您慎重地选择恰当的标签层级来构建文档的结构。因此，请不要利用标题标签来改变同一行中的字体大小。相反，我们应当使用层叠样式表定义来达到漂亮的显示效果。</p>
+
+        <h3>实例</h3>
+        <p>六个不同的 HTML 标题：</p>
+        <div class="code-example">
+            <h1>这是标题 1</h1>
+            <h2>这是标题 2</h2>
+            <h3>这是标题 3</h3>
+            <h4>这是标题 4</h4>
+            <h5>这是标题 5</h5>
+            <h6>这是标题 6</h6>
+        </div>
+        <pre>
+    &lt;h1&gt;这是标题 1&lt;/h1&gt;
+    &lt;h2&gt;这是标题 2&lt;/h2&gt;
+    &lt;h3&gt;这是标题 3&lt;/h3&gt;
+    &lt;h4&gt;这是标题 4&lt;/h4&gt;
+    &lt;h5&gt;这是标题 5&lt;/h5&gt;
+    &lt;h6&gt;这是标题 6&lt;/h6&gt;</pre>
+
+
+        <h2>&lt;p&gt;标签</h2>
+
+        <h3>定义和用法</h3>
+        <p>&lt;p&gt; 标签定义段落。</p>
+        <p>p 元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定。</p>
+        <h3>实例</h3>
+        <p>以下代码标记了一个段落：</p>
+        <div class="code-example">
+            <p>This is some text in a very short paragraph</p>
+        </div>
+        <pre>&lt;p&gt;This is some text in a very short paragraph&lt;/p&gt;</pre>
+
+
+        <h2>&lt;br&gt;标签</h2>
+
+        <h3>定义和用法</h3>
+        <p>&lt;br&gt; 可插入一个简单的换行符。</p>
+        <p>&lt;br&gt; 标签是空标签（意味着它没有结束标签，因此这是错误的：&lt;br&gt;&lt;/br&gt;）。在 XHTML 中，把结束标签放在开始标签中，也就是 &lt;br /&gt;。</p>
+        <p>请注意，&lt;br&gt; 标签只是简单地开始新的一行，而当浏览器遇到 &lt;p&gt; 标签时，通常会在相邻的段落之间插入一些垂直的间距。</p>
+
+        <h3>实例</h3>
+        <div class="code-example">
+            <p>
+                To break<br />lines<br />in a<br />paragraph,<br />use the br tag.
+            </p>
+        </div>
+        <pre>&lt;p&gt;To break&lt;br&gt;lines&lt;br&gt;in a&lt;br&gt;paragraph,&lt;br&gt;use the br tag.&lt;/p&gt;</pre>
+
+        <h2>&lt;pre&gt;标签</h2>
+
+        <h3>定义和用法</h3>
+
+        <p>pre 元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。</p>
+
+        <p>&lt;pre&gt; 标签的一个常见应用就是用来表示计算机的源代码。</p>
+
+        <p>可以导致段落断开的标签（例如标题、&lt;p&gt; 和&lt;address&gt; 标签）<strong>绝不能</strong>包含在 &lt;pre&gt;
+            所定义的块里。尽管有些浏览器会把段落结束标签解释为简单地换行，但是这种行为在所有浏览器上并不都是一样的。</p>
+
+        <h3>实例</h3>
+
+        <p>pre 元素中允许的文本可以包括物理样式和基于内容的样式变化，还有链接、图像和水平分隔线。当把其他标签（比如
+            &lt;a&gt; 标签）放到 &lt;pre&gt; 块中时，就像放在 HTML/XHTML 文档的其他部分中一样即可。请看下面的例子：</p>
+
+        <pre>
+    &lt;pre&gt;
+        &amp;lt;html&amp;gt;
+        
+        &amp;lt;head&amp;gt;
+          &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;loadxmldoc.js&amp;quot;&amp;gt;
+        &amp;lt;/script&amp;gt;
+        &amp;lt;/head&amp;gt;
+        
+        &amp;lt;body&amp;gt;
+        
+          &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+            xmlDoc=<code>&lt;a href="dom_loadxmldoc.asp"&gt;loadXMLDoc&lt;/a&gt;</code>(&amp;quot;books.xml&amp;quot;);
+            document.write(&amp;quot;xmlDoc is loaded, ready for use&amp;quot;);
+          &amp;lt;/script&amp;gt;
+        
+        &amp;lt;/body&amp;gt;
+        
+        &amp;lt;/html&amp;gt;
+    &lt;/pre&gt;</pre>
+
+        <p>在上面的代码中，&lt;pre&gt; 标签中的特殊符号被转换为符号实体，比如 "&amp;lt;" 代表
+            "&lt;"，"&amp;gt;" 代表 "&gt;"。另外，请注意蓝色的代码，我们在 &lt;pre&gt; 标签中使用了链接，也就是 &lt;a&gt; 标签。上面这段代码的显示效果如下：</p>
+
+        <pre>
+        &lt;html&gt;
+            
+            &lt;head&gt;
+              &lt;script type="text/javascript" src="loadxmldoc.js"&gt;
+            &lt;/script&gt;
+            &lt;/head&gt;
+            
+            &lt;body&gt;
+            
+              &lt;script type="text/javascript"&gt;
+                xmlDoc=<a href="/xmldom/dom_loadxmldoc.asp">loadXMLDoc</a>("books.xml");
+                document.write("xmlDoc is loaded, ready for use");
+              &lt;/script&gt;
+            
+            &lt;/body&gt;
+            
+        &lt;/html&gt;
+        </pre>
+
+
+        <h2>&lt;span&gt;标签</h2>
+        <h3>定义和用法</h3>
+        <p>&lt;span&gt; 标签被用来组合文档中的行内元素。</p>
+
+        <h2>&lt;hr&gt;标签</h2>
+        <h3>定义与用法</h3>
+        <p>&lt;hr&gt; 标签在 HTML 页面中创建一条水平线。水平分隔线（horizontal rule）可以在视觉上将文档分隔成各个部分。</p>
+        <h3>实例</h3>
+        <div class="code-example">
+            <h1>This is header 1</h1>
+            <hr />
+            <p>This is some text</p>
+        </div>
+        <pre>
+    &lt;h1&gt;This is header 1&lt;/h1&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;This is some text&lt;/p&gt;
+        </pre>
+    </div>
+</body>
+
+</html>

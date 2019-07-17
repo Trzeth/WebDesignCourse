@@ -1,0 +1,153 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+#Container{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#Background{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*渐变背景 从右向左*/
+    background: linear-gradient(-45deg,#eeedef 25%,#faf9fa 25% 50%,transparent 50%);
+}
+
+#LeftTop{
+    position: absolute;
+    top: -25px;
+    left: -150px;
+    transform: rotate(-45deg);
+}
+.box{
+    width: 400px;
+    text-align: center;
+    letter-spacing: .1em;
+}
+#Web{
+    font-weight: 100;
+    padding-top: 30px;
+    line-height: 80px;
+    font-size: 2em;
+    background: #3f3d43;
+    color: white;
+}
+#Des{
+    line-height: 50px;
+    letter-spacing: .1em;
+    font-size: 1.5em;
+    transition: padding .5s ease;
+    background: #ecebec;
+    color: #c9c7c9;
+}
+
+#RightBottom{
+    position: absolute;
+    bottom: -50px;
+    right: -140px;
+    transform: rotate(-45deg);
+}
+#WebDes{
+    font-family: Segoe UI;
+    font-weight: 100;
+    padding: 20px 0 100px 0;
+    line-height: 50px;
+    font-size: 2em;
+    background: #3f3d43;
+    color: white;
+}
+
+.background-rect{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200%;
+    width: 150%;
+    z-index: -1;
+    transform: rotate(-45deg);
+    margin: auto;
+}
+
+#Main{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 253px;
+    width: 50%;
+    margin: auto;
+    background: #ffffff4d;
+    min-width: 600px;
+}
+
+.line{
+    height: 0;
+    border-top: 2px solid #3f3d43;
+    border-bottom: 2px solid #3f3d43;
+    width: 100%;
+    animation: lineAni 2s ease;
+}
+@keyframes lineAni{
+    from {width: 0;}
+    to {width: 100%;}
+}
+.text{
+    margin: 50px;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+#link{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+#link-back{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(-45deg,#3f3d43 50%,transparent 50%);
+    opacity: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    width: 500px;
+    padding: 0 50px;
+    line-height: 253px;
+    text-align: right;
+}
+#link:hover #link-back{
+    animation: linkAni .3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes linkAni{
+    from{
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        height: 260px;
+        opacity: 1;
+    }
+}

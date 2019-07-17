@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="doc">
+        <div class="title">
+            <strong>&lt;form&gt; &lt;input&gt; &lt;select&gt; &lt;textarea&gt;标签</strong>
+            <small>数据 / 提交</small>
+        </div>
+
+        <h2>&lt;form&gt;标签</h2>
+        <h3>定义和用法</h3>
+        <p>&lt;form&gt; 标签用于为用户输入创建 HTML 表单。</p>
+        <p>表单能够包含 input 元素，比如文本字段、复选框、单选框、提交按钮等等。</p>
+        <p>表单还可以包含 menus、textarea、fieldset、legend 和 label 元素。</p>
+        <p>表单用于向服务器传输数据。</p>
+        <h3>实例</h3>
+        <div class="code-example">
+            <form style="border: 1px solid black;padding: 5px;">
+                <span>姓名：</span>
+                <input type="text">
+                <span>班级：</span>
+                <input type="text">                
+                <span>学号：</span>
+                <input type="text">
+                <input type="submit">
+            </form>
+        </div>
+        <pre>
+    &lt;form style=&quot;border: 1px solid black;padding: 5px;&quot;&gt;
+        &lt;span&gt;姓名：&lt;/span&gt;
+        &lt;input type=&quot;text&quot;&gt;
+        &lt;span&gt;班级：&lt;/span&gt;
+        &lt;input type=&quot;text&quot;&gt;                
+        &lt;span&gt;学号：&lt;/span&gt;
+        &lt;input type=&quot;text&quot;&gt;
+        &lt;input type=&quot;submit&quot;&gt;
+    &lt;/form&gt;</pre>
+
+
+        <h2>&lt;input&gt;标签</h2>
+        <h3>定义与用法</h3>
+        <p>&lt;input&gt; 标签用于搜集用户信息。</p>
+        <p>根据不同的 type 属性值，输入字段拥有很多种形式。输入字段可以是文本字段、复选框、掩码后的文本控件、单选按钮、按钮等等。</p>
+
+        <h2>&lt;select&gt;标签</h2>
+        <h3>定义与用法</h3>
+        <p>select 元素可创建单选或多选菜单。</p>
+        <p>&lt;input&gt; 元素中的 &lt;option&gt; 标签用于定义列表中的可用选项。</p>
+        <h3>实例</h3>
+        <p>创建带有 4 个选项的选择列表：</p>
+
+        <div class="code-example">
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <pre>
+        &lt;select&gt;
+            &lt;option value ="volvo"&gt;Volvo&lt;/option&gt;
+            &lt;option value ="saab"&gt;Saab&lt;/option&gt;
+            &lt;option value="opel"&gt;Opel&lt;/option&gt;
+            &lt;option value="audi"&gt;Audi&lt;/option&gt;
+        &lt;/select&gt;</pre>
+
+        <h2>&lt;textarea&gt;</h2>
+        <h3>定义与用法</h3>
+        <p>
+            &lt;textarea&gt; 标签定义多行的文本输入控件。
+        </p>
+        <p>
+            文本区中可容纳无限数量的文本，其中的文本的默认字体是等宽字体（通常是 Courier）。
+        </p>
+        <p>
+            可以通过 cols 和 rows 属性来规定 textarea 的尺寸，不过更好的办法是使用 CSS 的 height 和 width 属性。
+        </p>
+        <p>
+            注释：在文本输入区内的文本行间，用 "%OD%OA" （回车/换行）进行分隔。
+        </p>
+        <h3>实例</h3>
+        <div class="code-example">
+            <textarea rows="3" cols="20">在w3school，你可以找到你所需要的所有的网站建设教程。</textarea>
+        </div>
+        <pre>
+    &lt;textarea rows="3" cols="20"&gt;在w3school，你可以找到你所需要的所有的网站建设教程。&lt;/textarea&gt;</pre>
+    </div>
+</body>
+
+</html>
